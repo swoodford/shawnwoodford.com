@@ -1,0 +1,42 @@
+html { 
+  background: url(astoriapanorama.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='astoriapanorama.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='astoriapanorama.jpg', sizingMethod='scale')";
+}
+
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 16em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+    /*font-family: "Arial Black", Gadget, sans-serif;*/
+    text-transform: lowercase;
+    text-align: center;
+    color: #fff;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
