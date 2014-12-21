@@ -1,8 +1,8 @@
 require 'capistrano/s3'
 
 set :bucket, "shawnwoodford.com"
-set :access_key_id, <%= ENV["access_key_id"] %>
-set :secret_access_key, <%= ENV["secret_access_key"] %>
+set :access_key_id, "xyz"
+set :secret_access_key, "123"
 
 set :application, "shawnwoodford.com"
 set :repository,  "git@github.com:swoodford/shawnwoodford.com.git"
