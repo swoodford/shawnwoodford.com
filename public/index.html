@@ -7,16 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link href="css-terminal-emulator.css" rel="stylesheet">
+    <script type="text/javascript">
+      function code(e) {
+        e = e || window.event;
+        return(e.keyCode || e.which);
+      }
+      window.onload = function(){
+        document.onkeypress = function(e){
+          var key = code(e);
+          window.location.href = '/archive';
+        };
+      };
+    </script>
+    <script type="text/javascript">
+      function touched() {
+        var touch = document.getElementById("touch");
+        touch.addEventListener("touchstart", touchHandler, false);
+      }
+      function touchHandler(event) {
+        window.location.href = '/archive';
+      }
+    </script>
+    <script type="text/javascript">
+      function blink() {
+        var blinks = document.getElementsByTagName('blink');
+        for (var i = blinks.length - 1; i >= 0; i--) {
+          var s = blinks[i];
+          s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+        }
+        window.setTimeout(blink, 500);
+      }
+      if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
+      else if (window.addEventListener) window.addEventListener("load", blink, false);
+      else if (window.attachEvent) window.attachEvent("onload", blink);
+      else window.onload = blink;
+    </script>
   </head>
   <body>
-            <div class="span1">
-                <div class="terminal-emulator">
-                root@shawnwoodford.com$ rm -rf *<br/>
-                root@shawnwoodford.com$ ls / <br/>
-                total 0<br/>
-                root@shawnwoodford.com$ ▌
-                </div>
-            </div>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+      <div class="span1" id="touch">
+          <div class="terminal-emulator">
+          root@shawnwoodford.com$ rm -rf *<br/>
+          root@shawnwoodford.com$ ls / <br/>
+          total 0<br/>
+          root@shawnwoodford.com$ <blink>▌</blink>
+          </div>
+      </div>
   </body>
 </html>
