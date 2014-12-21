@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pure CSS Terminal Emulator and Line Numbering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="michaelb">
+
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="css-terminal-emulator.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Pure CSS Terminal & Line Numbering</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="http://michaelb.org/">by michaelb</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="span6">
+<pre>
+&lt;div class="terminal-emulator"&gt;
+michaelb@mybox$ rm / -rf&lt;br/&gt;
+michaelb@mybox$ ls /&lt;br/&gt;
+Error, you deleted it all, lololololol
+&lt;/div&gt;
+</pre>
+            </div>
+            <div class="span6">
+                <div class="terminal-emulator">
+                michaelb@mybox$ rm / -rf<br/>
+                michaelb@mybox$ ls / <br/>
+                Error, you deleted it all, lololololol
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span6">
+<pre>
+&lt;pre class="terminal-emulator vim"&gt;
+var funcName = function () {
+    return doSomething();
+}
+console.log(funcName()));
+&lt;/pre&gt;
+</pre>
+            </div>
+            <div class="span6">
+            <pre class="terminal-emulator vim">
+var funcName = function () {
+    return doSomething();
+}
+console.log(funcName());
+            </pre>
+            </div>
+        </div>
+        <div class="row">
+
+        <h1>Pure CSS Terminal and Line Numbering</h1>
+        <p>CSS Styles for a terminal emulator (ie, the window you have in Linux
+        or OSX that presents a UNIX command line interface). It can also do
+        line numbering in a way that looks like a popular vim theme. It does
+        this all through advanced <code>:after</code> and <code>:before</code>
+        trickery!</p>
+
+        <p>Try <code>&lt;pre class="terminal-emulator"&gt;</code> or <code>&lt;div
+        class="terminal-emulator"&gt;</code> to use.  For the line numbering, add the
+        vim class, like <code>&lt;div class="terminal-emulator
+        vim"&gt;</code></p>
+
+        <p>Vaguely modeled off of GNOME 3's styling. Should work with or
+        without Bootstrap.</p>
+
+        <h2>Compatibility</h2>
+        <p>Tested in...</p>
+        <ul>
+            <li>Firefox 18</li>
+            <li>Chromium 24</li>
+            <li>Chrome 27</li>
+        </ul>
+
+    <div>
+    <h5>License</h5>
+        &copy;opyleft <a href="http://michaelb.org/">michaelb</a>, released under the MIT license
+    </div>
+    </div> <!-- /container -->
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
