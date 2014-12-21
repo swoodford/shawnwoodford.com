@@ -1,8 +1,8 @@
 require 'capistrano/s3'
 
 set :bucket, "shawnwoodford.com"
-set :access_key_id, $access_key_id
-set :secret_access_key, $secret_access_key
+set :access_key_id, $ACCESS_KEY_ID
+set :secret_access_key, $SECRET_ACCESS_KEY
 
 set :application, "shawnwoodford.com"
 set :repository,  "git@github.com:swoodford/shawnwoodford.com.git"
