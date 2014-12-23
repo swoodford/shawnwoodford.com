@@ -1,17 +1,20 @@
 
+/* Window title */
 .terminal-emulator:before {
     content: "root@shawnwoodford.com - bash 800x600";
 }
 
+/* Text style */
 .terminal-emulator {
     font-size: 11pt;
+    text-shadow: 1px 4px 2px #7193CC;
     line-height: 15pt;
     border-radius: 4px;
     display: block;
     min-width: 100vw;
     min-height: 100vh;
     background: black;
-    color: #bbb;
+    color: #99CCFF;
     padding: 0;
     font-family: monospace;
     padding-bottom: 2px;
@@ -24,6 +27,7 @@
     cursor: text;
 }
 
+/* Window title bar style */
 .terminal-emulator:before {
     height: 20px;
     display: block;
