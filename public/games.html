@@ -1,38 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>root@shawnwoodford.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="css-terminal-emulator.css" rel="stylesheet">
-  <script type="text/javascript">
-  window.onload = function(){
-    document.onkeypress = function(){
-      window.location.href = 'https://github.com/swoodford';
-    }
-    document.onmousedown = function(){
-      window.location.href = 'https://github.com/swoodford';
-    }
-  }
-  window.addEventListener('load', function(){
-    document.body.addEventListener('touchend', function(e){
-      window.location.href = 'https://github.com/swoodford';
-    }, false) 
-  }, false)
-  function blink() {
-    var blinks = document.getElementsByTagName('blink');
-    for (var i = blinks.length - 1; i >= 0; i--) {
-      var s = blinks[i];
-      s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-    }
-    window.setTimeout(blink, 500);
-  }
-  if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
-  else if (window.addEventListener) window.addEventListener("load", blink, false);
-  else if (window.attachEvent) window.attachEvent("onload", blink);
-  else window.onload = blink;
-  </script>
+  <link rel="stylesheet" href="css/index.min.css">
+  <script type="text/javascript" src="js/games.min.js"></script>
 </head>
 <body>
   <!-- Google Tag Manager -->
