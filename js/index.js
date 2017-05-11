@@ -4,6 +4,7 @@ window.onload = function() {
     body.style.backgroundColor='#000';
     body.style.color='#060';
     body.style.fontFamily='Lucida Console';
+    body.style.fontSize='x-small';
 
     for(var i = 0; i <= 100; i++){
         var tr = tbl.insertRow();
